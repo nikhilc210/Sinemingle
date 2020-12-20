@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.SignupProfile">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_above="@+id/save_photo"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logonew"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/logo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lastly, please upload your photo. This must be a clear photo of your face."
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="16dp"
+            android:lineSpacingExtra="5dp"
+            android:gravity="center_horizontal" />
+
+
+        <com.github.florent37.shapeofview.shapes.RoundRectView
+            android:layout_width="250dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:elevation="4dp"
+            app:shape_roundRect_bottomLeftRadius="10dp"
+            app:shape_roundRect_bottomRightRadius="10dp"
+            app:shape_roundRect_topLeftRadius="10dp"
+            app:shape_roundRect_topRightRadius="10dp"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/add_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Add photo"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/ic_add_circle_black_24dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/colorPrimary"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:id="@+id/image"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_corner"
+                android:text="Change Image"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:elevation="5dp"
+                android:id="@+id/changeImage"
+                android:visibility="gone"/>
+            <!-- YOUR CONTENT -->
+
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/save_photo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/round_corner"
+        android:text="Add a photo"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        />
+
+</RelativeLayout>

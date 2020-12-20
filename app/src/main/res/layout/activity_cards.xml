@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:id="@+id/toolbar">
+
+            <ImageButton
+                android:id="@+id/user_info"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_switch"
+                android:visibility="gone"
+                android:background="@null"
+                />
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/round_corner"
+                android:elevation="5dp"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:background="@color/white"
+            android:layout_above="@+id/bottom">
+
+
+                    <com.www.itechanalogy.seenminglemaking.Helper.SwipeFlingAdapterView
+                        android:id="@+id/swipeView"
+                        android:layout_width="match_parent"
+                        android:visibility="visible"
+                        android:layout_height="560dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="20dp"
+                        tools:context=".Activity.Cards.Cards"/>
+                    <ImageButton
+                        android:id="@+id/dislike"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="50dp"
+                        android:background="@drawable/round_corner"
+                        android:backgroundTint="@color/white"
+                        android:elevation="5dp"
+                        android:src="@drawable/ic_close_black_24dp"
+                        android:tint="@color/explore_color"
+                        android:scaleType="centerCrop"/>
+
+                    <ImageButton
+                        android:id="@+id/like"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginEnd="50dp"
+                        android:background="@drawable/round_corner"
+                        android:backgroundTint="@color/explore_color"
+                        android:elevation="5dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_hear"
+                        android:tint="@color/green"
+                        />
+
+                <FrameLayout
+                    android:id="@+id/fragment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_menu"/>
+        <RelativeLayout
+            android:id="@+id/liked_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <com.github.mmin18.widget.RealtimeBlurView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:realtimeBlurRadius="50dp"
+                android:background="@drawable/round_corner"
+                android:backgroundTint="#8000"
+                android:layout_margin="10dp"
+                app:realtimeOverlayColor="#8000" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="20dp"
+                android:text="It's a Match!"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="45dp"
+                android:textStyle="bold"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/my_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/dummy_image"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1dp"
+                android:layout_marginStart="100dp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/dummy_image"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1dp"
+                android:layout_marginStart="180dp"/>
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_image"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:textAlignment="center"
+                android:text="You and User have like each other."
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/alef_bold"
+                android:layout_centerInParent="true"
+                />
+
+            <Button
+                android:id="@+id/message_user"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/message"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/round_corner"
+                android:text="Start Messaging"
+                android:textColor="@color/white"
+                android:fontFamily="@font/cabin"
+                android:textAllCaps="false"
+                android:textSize="18dp"/>
+            <Button
+                android:id="@+id/keep_swipe"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/message_user"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/round_corner"
+                android:text="Keep Swipping"
+                android:textColor="@color/white"
+                android:fontFamily="@font/cabin"
+                android:textAllCaps="false"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

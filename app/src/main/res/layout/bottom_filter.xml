@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Senemingle Gold"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/alef"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="vertical">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:text="Unlimited Swipes"
+                        android:textDirection="ltr"
+                        android:layoutDirection="rtl"
+                        android:buttonTint="@color/yellow"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:text="Change your mind"
+                        android:textDirection="ltr"
+                        android:layoutDirection="rtl"
+                        android:buttonTint="@color/yellow"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:text="Supporter"
+                        android:textDirection="ltr"
+                        android:layoutDirection="rtl"
+                        android:buttonTint="@color/yellow"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:text="Profile Boost"
+                        android:textDirection="ltr"
+                        android:layoutDirection="rtl"
+                        android:buttonTint="@color/yellow"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:text="Reset Swipes"
+                        android:textDirection="ltr"
+                        android:layoutDirection="rtl"
+                        android:buttonTint="@color/yellow"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:text="Private photos Filter"
+                        android:layout_marginEnd="10dp"
+                        android:textDirection="ltr"
+                        android:layoutDirection="rtl"
+                        android:buttonTint="@color/yellow"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:text="Preferences"
+                        android:textDirection="ltr"
+                        android:layoutDirection="rtl"
+                        android:buttonTint="@color/yellow"
+                        />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:text="Profile Gold Badge"
+                        android:textDirection="ltr"
+                        android:layoutDirection="rtl"
+                        android:buttonTint="@color/yellow"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:text="No Ads"
+                        android:textDirection="ltr"
+                        android:layoutDirection="rtl"
+                        android:buttonTint="@color/yellow"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/free_trail_one"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:backgroundTint="@color/explore_color"
+                android:background="@drawable/round_corner">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Start 7 day FREE trial"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/cabin"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="$ 9.99 per Month"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/cabin"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/three_tw"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:elevation="5dp"
+                android:backgroundTint="@color/explore_color"
+                android:orientation="vertical"
+                android:background="@drawable/round_corner">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="$ 19.99 per 3 Month"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/cabin"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/year_two"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:gravity="center"
+                android:elevation="5dp"
+                android:backgroundTint="@color/explore_color"
+                android:orientation="vertical"
+                android:background="@drawable/round_corner">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="$ 99.00 per Year"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/cabin"/>
+
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_border"
+                android:text="More Options..."
+                android:textAllCaps="false"
+                android:elevation="5dp"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/cabin"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:visibility="gone"
+                android:src="@drawable/setting_bottom_imagr"/>
+            <LinearLayout
+                android:id="@+id/free_trail_two"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:elevation="5dp"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:background="@drawable/round_corner">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Start 7 day FREE trial"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/cabin"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Then Rs. 699.00 per week"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/cabin"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

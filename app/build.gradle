@@ -1,0 +1,94 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "com.www.itechanalogy.seenminglemaking"
+        minSdkVersion 17
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.android.support:design:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    //Firebase ID IS From nikhilchandeshwar13@gmail.com
+    //Video View
+    implementation 'com.linsea:universalvideoview:1.1.0@aar'
+    //Easy Permission For Real Time Permission From Users
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    //Shape View
+    implementation 'com.github.florent37:shapeofview:1.3.2'
+    //Universal Image Loader
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //Shape Ripple
+    implementation 'com.rodolfonavalon:ShapeRippleLibrary:1.0.0'
+    //Circle ImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //Design Library
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+    //Swipe View
+    implementation 'com.lorentzos.swipecards:library:1.0.9'
+    //Switch Button
+    implementation 'com.github.angads25:toggle:1.1.0'
+    //Volley Networking Library
+    implementation 'com.android.volley:volley:1.1.1'
+    //TubiLoadingView
+    implementation 'com.tubitv.ui:tubi-loading-view:0.0.4@aar'
+    //Achivement Toast
+    implementation 'com.github.mkodekar:AchievementToast:0.1'
+    //Uploading Service
+    implementation 'net.gotev:uploadservice:3.4'
+    //Facebook Login
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+    //Google Login
+    implementation 'com.google.android.gms:play-services-auth:18.0.0'
+    //Wheel View
+    implementation 'com.weigan:loopView:0.2.2'
+    //Country List
+    implementation 'com.github.jitenderdev:countryutility:v1.1'
+    //SeekBar
+    implementation 'com.crystal:crystalrangeseekbar:1.1.3'
+    //iOS Switch
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'
+    //Placeholder view
+    implementation 'com.mindorks.android:placeholderview:1.0.3'
+    //Android in-app Purchase
+    implementation 'com.android.billingclient:billing:2.1.0'
+    //Blur View
+    implementation 'com.github.mmin18:realtimeblurview:1.2.1'
+
+    implementation 'commons-validator:commons-validator:1.6'
+
+
+}

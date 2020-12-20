@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.Height">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/toolbar">
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:src="@drawable/ic_close_black_24dp"
+            android:id="@+id/close"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logonew"
+            android:id="@+id/logo"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/height_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:visibility="visible"
+        >
+        <ImageView
+            android:id="@+id/tall_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/tall"/>
+        <TextView
+            android:id="@+id/tall_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tall_img"
+            android:text="How tall are you?"
+            android:textAlignment="center"
+            android:textSize="28dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/abril_fatface"/>
+        <com.weigan.loopview.LoopView
+            android:layout_marginTop="20dp"
+            android:id="@+id/loopView"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_below="@+id/tall_text"
+            app:awv_textsize="18"
+            android:fontFamily="@font/cabin"
+            app:awv_isLoop="false"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

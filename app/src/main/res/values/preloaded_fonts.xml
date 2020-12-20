@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abril_fatface</item>
+        <item>@font/aclonica</item>
+        <item>@font/alef</item>
+        <item>@font/alef_bold</item>
+        <item>@font/asap_bold</item>
+        <item>@font/asul_bold</item>
+        <item>@font/cabin</item>
+        <item>@font/courgette</item>
+        <item>@font/dr_sugiyama</item>
+        <item>@font/heebo_bold</item>
+        <item>@font/oleo_script_bold</item>
+        <item>@font/vibur</item>
+    </array>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "936277310972",
+    "firebase_url": "https://seenmingle-making.firebaseio.com",
+    "project_id": "seenmingle-making",
+    "storage_bucket": "seenmingle-making.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936277310972:android:56068e9c2dd3f58ec08679",
+        "android_client_info": {
+          "package_name": "com.www.itechanalogy.seenminglemaking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936277310972-sajbue47cu9ol0239ikba5h76i74irjg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.www.itechanalogy.seenminglemaking",
+            "certificate_hash": "52e508d129a5db59459f4695b3b1f5305db116b8"
+          }
+        },
+        {
+          "client_id": "936277310972-5qsd197tp3qlpqlrpuvsf67s1tg5cun1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDycKuhyPnmGkiCpkvFV9mdGhpJnu97FAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936277310972-5qsd197tp3qlpqlrpuvsf67s1tg5cun1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

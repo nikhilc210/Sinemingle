@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/cards"
+        android:icon="@drawable/newcard"
+        android:iconTint="@color/white"
+        android:title=""/>
+    <item android:id="@+id/eye"
+        android:icon="@drawable/newexplore"
+        android:iconTint="@color/white"
+        android:title=""/>
+    <item android:id="@+id/chat"
+        android:icon="@drawable/newchat"
+        android:iconTint="@color/white"
+        android:title=""/>
+    <item android:id="@+id/filter"
+        android:icon="@drawable/newfilter"
+        android:iconTint="@color/white"
+        android:title=""/>
+    <item android:id="@+id/settings"
+        android:icon="@drawable/newprofile"
+        android:iconTint="@color/white"
+        android:title=""/>
+
+</menu>

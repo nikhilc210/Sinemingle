@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/my_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corner"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hiii Nikhil How are you"
+            android:textColor="@color/white"
+            android:fontFamily="@font/alef"
+            android:id="@+id/my_message"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00 AM"
+            android:textSize="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="end"
+            android:textColor="@color/white"
+            android:id="@+id/my_time"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/user_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/grey"
+        android:visibility="gone"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hiii Nikhil How are you"
+            android:textColor="@color/black"
+            android:fontFamily="@font/alef"
+            android:id="@+id/user_message"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00 AM"
+            android:textSize="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="end"
+            android:textColor="@color/black"
+            android:id="@+id/user_time"/>
+    </LinearLayout>
+</RelativeLayout>

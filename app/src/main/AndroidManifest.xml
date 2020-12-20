@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.www.itechanalogy.seenminglemaking">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:icon="@drawable/mainlogoapp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/mainlogoapp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.Relocation"></activity>
+        <activity android:name=".Activity.Marriage" />
+        <activity android:name=".Activity.Children" />
+        <activity android:name=".Activity.Activity" />
+        <activity android:name=".Activity.Maritial" />
+        <activity android:name=".Activity.Height" />
+        <activity android:name=".Activity.Smoker" />
+        <activity android:name=".Activity.Alchohal" />
+        <activity android:name=".Activity.Halal" />
+        <activity android:name=".Activity.Praying" />
+        <activity android:name=".Activity.Religion" />
+        <activity android:name=".Activity.Convert" />
+        <activity android:name=".Activity.Sect" />
+        <activity android:name=".Activity.Employer" />
+        <activity android:name=".Activity.Job" />
+        <activity android:name=".Activity.Proffesion" />
+        <activity android:name=".Activity.Education" />
+        <activity android:name=".Activity.About" />
+        <activity android:name=".Activity.Status" />
+        <activity android:name=".Activity.Gender" />
+        <activity android:name=".Activity.DOB" />
+        <activity android:name=".Activity.NickName" />
+        <activity android:name=".Activity.ProfilePicture" />
+        <activity android:name=".Activity.UpdateProfilePicture" />
+        <activity android:name=".Activity.MyProfile" />
+        <activity android:name=".Activity.SelectAge" />
+        <activity android:name=".Activity.SelectFilterCountry" />
+        <activity android:name=".Activity.SetLocation" />
+        <activity android:name=".Activity.SelectSect" />
+        <activity android:name=".Activity.Ethnicity" />
+        <activity android:name=".Activity.UpdateEmail" />
+        <activity android:name=".Activity.UpdateProfile" />
+        <activity android:name=".Activity.MainSettings" />
+        <activity android:name=".Activity.ReportProblem" />
+        <activity android:name=".Activity.UnMatched" />
+        <activity android:name=".Activity.AdminMessage" />
+        <activity android:name=".Activity.UserProfile" />
+        <activity android:name=".Activity.Message" />
+        <activity android:name=".Activity.UserInfo" />
+        <activity android:name=".Activity.SignupProfile" />
+        <activity android:name=".Activity.Help" />
+        <activity android:name=".Activity.NoInternet" />
+        <activity android:name=".Activity.CompleteDashboard" />
+        <activity android:name=".Activity.Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
